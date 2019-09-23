@@ -1,0 +1,13 @@
+server:
+  port: 8763
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jtanLR/conf-repo/
+          search-paths: client-repo
+          username:   #enter username
+          password:  #enter password
